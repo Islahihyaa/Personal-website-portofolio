@@ -16,39 +16,43 @@ function closeMenu() {
 
   return (
     <>
-    <div className="bg-[url('/src/assets/img/bg-navbar.png')] bg-cover flex items-center justify-between py-10 px-10 text-lg">
-        <div>
-            <a className="pl-20 text-2xl text-[#53CCEC] ssm:p-0" href="#">Islahihya Muhammad</a>
-        </div>
-        <div className="pr-20 space-x-5 ">
-            <div className="ssm:hidden lg:block space-x-2">
-                <a href="/" className="hover:text-[#53CCEC] hover:underline underline-offset-4 "> HOME </a>
-                <a href="/about" className="hover:text-[#53CCEC] hover:underline underline-offset-4"> ABOUT </a>
-                <a href="/portofolio" className="hover:text-[#53CCEC] hover:underline underline-offset-4"> PORTOFOLIO </a>
-                <a href="/contact" className="hover:text-[#53CCEC] hover:underline underline-offset-4"> CONTACT </a>
+    <div className='bg-[#53CCEC]'>
+        <div className="flex items-center justify-between text-lg">
+            <div className='text-2xl text-white ssm:p-0 font-bold'>
+                <a className=" ssm:hidden lg:block py-5 pl-20" href="#">Islahihya Muhammad</a>
+                <a className=" ssm:block lg:hidden py-5 pl-5" href="#">Islahihya Muhammad</a>
+            </div>
+            <div className="px-5 ">
+                <div className="ssm:hidden lg:block space-x-10 font-semibold">
+                    <a href="/" className="hover:text-white hover:underline underline-offset-4 "> HOME </a>
+                    <a href="/about" className="hover:text-white hover:underline underline-offset-4"> ABOUT </a>
+                    <a href="/portofolio" className="hover:text-white hover:underline underline-offset-4"> PORTOFOLIO </a>
+                    <a href="/contact" className="hover:text-white hover:underline underline-offset-4"> CONTACT </a>
+                </div>
+            </div>
+
+            <div className='ssm:block lg:hidden px-5'>
+                {toggle ? (
+                    <AiOutlineClose onClick={closeMenu} size={20} className='text-white'/>
+                    
+                ):(<HiMenuAlt1 onClick={openMenu} size={20} className='text-white'/>)}
             </div>
         </div>
-        <div className='ssm:block lg:hidden'>
+
+        <div className=''> 
             {toggle ? (
-                <AiOutlineClose onClick={closeMenu} size={20} className='text-[#53CCEC]'/>
-                
-                
-            ):(<HiMenuAlt1 onClick={openMenu} size={20} className='text-[#53CCEC]'/>)}
+                <div className='pl-5 pb-2'>
+                    <ul className='text-white font-semibold justify-between'>
+                        <li href="/" className='cursor-pointer mb-2'><a href="/">HOME</a></li>
+                        <li className='cursor-pointer mb-2'><a href="/about">ABOUT</a></li>
+                        <li href="/portofolio" className='cursor-pointer mb-2'><a href="/portofolio">PORTOFOLIO</a></li>
+                        <li href="/contact" className='cursor-pointer mb-2'><a href="/contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            ):(
+                <div></div>
+            )}
         </div>
-    </div>
-    <div className="ssm:block lg:hidden bg-[url('/src/assets/img/bg-navbar.png')]">
-        {toggle ? (
-            <div className='flex justify-between ml-10'>
-                <ul className='text-[#53CCEC] '>
-                    <li className='cursor-pointer'>HOME</li>
-                    <li className='cursor-pointer'>ABOUT</li>
-                    <li className='cursor-pointer'>PORTOFOLIO</li>
-                    <li className='cursor-pointer'>CONTACT</li>
-                </ul>
-            </div>
-        ):(
-            <div></div>
-        )}
 
     </div>
     
