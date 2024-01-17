@@ -1,6 +1,7 @@
 import { AiOutlineClose } from 'react-icons/ai';
 import {HiMenuAlt1} from 'react-icons/hi';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const NavbarComponent = () => {
 
@@ -43,10 +44,10 @@ function closeMenu() {
             {toggle ? (
                 <div className='pl-5 pb-2'>
                     <ul className='text-white font-semibold justify-between'>
-                        <li href="/" className='cursor-pointer mb-2'><a href="/">HOME</a></li>
+                        <li className='cursor-pointer mb-2'><a href="/">HOME</a></li>
                         <li className='cursor-pointer mb-2'><a href="/about">ABOUT</a></li>
-                        <li href="/portofolio" className='cursor-pointer mb-2'><a href="/portofolio">PORTOFOLIO</a></li>
-                        <li href="/contact" className='cursor-pointer mb-2'><a href="/contact">CONTACT</a></li>
+                        <li className='cursor-pointer mb-2'><a href="/portofolio">PORTOFOLIO</a></li>
+                        <li className='cursor-pointer mb-2'><a href="/contact">CONTACT</a></li>
                     </ul>
                 </div>
             ):(
