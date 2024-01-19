@@ -3,18 +3,22 @@ import Photo from '../assets/img/photo-homepage.png';
 const HomePage = () => {
   return (
     <>
-      <section className="flex flex-col justify-between items-center p-20 sm:flex-row w-full">
-          <div className='m-5 p-10' >
-              <div className="ml-10 md:text-sm">
-                  <p className="text-3xl mb-3">Hello , My Name</p>
-                  <h1 className="text-9xl font-bold text-[#53CCEC]">Islahihya <br /> Muhammad</h1>
-                  <p className="font-semibold text-6xl my-10">A Front End Developer</p>
-                  <button className="bg-[#53CCEC] hover:bg-[#39C0E4] text-white font-bold py-2 px-4 rounded-xl text-2xl">KNOW MORE</button>
+      <section className=" pt-28 px-5 mb-6">
+          <div className='space-y-16' >
+              <div className="md:text-sm">
+                  <p className="text-xl mb-3">Hello! My Name</p>
+                  <h1 className=" text-6xl font-bold text-[#53CCEC] mb-3">Islahihya Muhammad</h1>
+                  <p className="text-xl font-semibold mb-5">A Front End Developer</p>
+                  <button className="bg-[#53CCEC] text-white font-bold rounded-xl shadow-lg mb-3 p-3 hover:bg-[#39C0E4] ">KNOW MORE</button>
+              </div>
+              <div className='p-4 '>
+                <img src={Photo}  alt='MyPhoto' className=''/>
               </div>
           </div>
-          <div className='flex items-center pr-20 pt-40'>
-              <img src={Photo}  alt='MyPhoto' className=''/>
+          <div className='hidden'>
+            Scroll Down For more!
           </div>
+
       </section>
     </>
 

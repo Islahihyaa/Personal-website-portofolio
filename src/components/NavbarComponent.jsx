@@ -16,17 +16,17 @@ function closeMenu() {
 
   return (
     <>
-    <div className='bg-[#53CCEC] fixed w-full'>
-        <div className='py-5 px-4 flex items-center justify-between'>
-            <a className="text-2xl text-white font-bold px-5" href="#">
+    <nav className='bg-[#53CCEC] fixed w-full md:flex px-2 mb-10'>
+        <div className='py-5 px-4 flex items-center justify-between md:w-full'>
+            <a className="text-xl text-white font-bold px-5" href="#">
                 Islahihya Muhammad
             </a>
 
-            <ul className=' items-center gap-x-7 text-[18px] left-0 top-24 flex-row hidden sm:flex'>
-                <li href="/" className="hover:text-white "> Home </li>
-                <li href="/about" className="hover:text-white "> About </li>
-                <li href="/portofolio" className="hover:text-white"> Portofolio </li>
-                <li href="/contact" className="hover:text-white"> Contact </li>
+            <ul className=' items-center gap-x-7 text-[18px] left-0 top-24 flex-row hidden sm:flex '>
+                <li href="/" className="hover:text-white cursor-pointer"> Home </li>
+                <li href="/about" className="hover:text-white cursor-pointer"> About </li>
+                <li href="/portofolio" className="hover:text-white cursor-pointer"> Portofolio </li>
+                <li href="/contact" className="hover:text-white cursor-pointer"> Contact </li>
                 <div className='opacity-50'>|</div>
                 <i className='logo'>logo</i>
             </ul>
@@ -53,7 +53,7 @@ function closeMenu() {
 
 
 
-        </div>
+        </nav>
 
 
 

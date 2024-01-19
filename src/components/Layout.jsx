@@ -13,7 +13,6 @@ const Layout = () => {
     <About/>
     <hr />
     <Portofolio/>
-    <Contact/>
     </>
 
   )
