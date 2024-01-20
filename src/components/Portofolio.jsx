@@ -1,3 +1,4 @@
+import PhotoProjects from '../assets/img/PhotoProjects1.png'
 
 const Portofolio = () => {
   return (
@@ -10,7 +11,16 @@ const Portofolio = () => {
         <button className="bg-[#53CCEC] text-white font-bold rounded-full shadow-lg mb-3 px-4 py-2 hover:bg-[#39C0E4] ">View on Github</button>
       </div>
       <div>
-        <img src="" alt="" />
+        <div className='m-3 '>
+          <img src={PhotoProjects} alt="Project1" className='mb-3'/>
+          <div className='overflow-x-auto'>
+            <div className='flex flex-row w-32  bg-slate-400 space-x-2 '  >
+              <img src={PhotoProjects} alt="Project1" className='' />
+              <img src={PhotoProjects} alt="Project1" className=''/>
+              <img src={PhotoProjects} alt="Project1" className=''/>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
