@@ -1,20 +1,20 @@
-import Photo from '../assets/img/photo-homepage.png';
-import PhotoProjects from '../assets/img/PhotoProjects1.png'
+import Photo from '../assets/img/Photo.png';
 
 const HomePage = () => {
   return (
     <>
-      <section className="flex pt-28 px-5 mb-6 w-full justify-center">
-            <div className='container 2xl:flex-col'>
-              <div className='md:px-28 lg:px-32 lg:flex xl:space-x-4 mb-14' >
-                  <div className="xl:p-6">
-                      <p className="text-xl mb-3 xl:text-3xl 2xl:text-4xl">Hello! My Name</p>
-                      <h1 className=" text-6xl font-bold text-[#53CCEC] mb-3 xl:text-8xl 2xl:text-9xl">Islahihya <br />Muhammad</h1>
-                      <p className="text-xl font-semibold mb-5 xl:text-3xl 2xl:text-4xl">A Front End Developer</p>
-                      <button className="bg-[#53CCEC] text-white font-bold rounded-xl shadow-lg mb-3 p-3 hover:bg-[#39C0E4] xl:text-2xl ">KNOW MORE</button>
+      <section className="pt-28 2xl:pt-60 mb-64">
+            <div className='container'>
+              <div className='justify-center mb-14 md:flex lg:px-4' >
+                  <div className="mb-5 lg:mr-10">
+                      <p className="text-base mb-2 md:text-2xl xl:text-3xl 2xl:text-4xl">Hello!👋 I'm</p>
+                      <h1 className="text-3xl font-bold text-primary md:text-6xl xl:text-8xl 2xl:text-9xl">Islahihya <span>Muhammad</span></h1>
+                      <p className="text-xl font-semibold mb-5 md:text-2xl xl:text-3xl 2xl:text-4xl">A Front End Developer</p>
+                      <p className='mb-10 text-slate-700 md:text-2xl xl:text-3xl '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, natus. Minus facere mollitia, soluta iure error id quisquam ad inventore!</p>
+                      <a className="bg-primary text-white font-semibold text-base rounded-full shadow-lg mb-3 py-3 px-4 hover:bg-primary md:text-2xl xl:text-2xl ">Know More</a>
                   </div>
-                  <div className=''>
-                    <img src={PhotoProjects}  alt='MyPhoto' className='w-full'/>
+                  <div className='mb-3'>
+                    <img src={Photo}  alt='MyPhoto' className=' max-w-full mx-auto'/>
                   </div>
               </div>
             </div>

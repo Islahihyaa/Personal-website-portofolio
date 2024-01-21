@@ -5,18 +5,23 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container:{
+      center: true,
+      padding: '16px',
+    },
     extend: {
-      backgroundImage: {
-        'hero-pattern': "url('./src/assets/img/bg-navbar.png')",
-      },
       fontFamily: {
         sans: [
           '"Mitr", sans-serif',
         ],
       },
       colors: {
-        'regal-blue': '#53CCEC',
+        'primary': '#53CCEC',
+        'secondary' : '#DEF4FA'
       },
+      screens : {
+        '2xl': '1320px',
+      }
     },
 
   },

@@ -16,13 +16,13 @@ function closeMenu() {
 
   return (
     <>
-    <nav className='bg-[#53CCEC] fixed w-full md:flex px-2 mb-10'>
-        <div className='py-5 px-4 flex items-center justify-between md:w-full'>
+    <nav className='bg-primary fixed w-full  px-2 mb-10'>
+        <div className='py-5 px-4 flex items-center justify-between'>
             <a className="text-xl text-white font-bold px-5" href="#">
                 Islahihya Muhammad
             </a>
 
-            <ul className=' items-center gap-x-7 text-[18px] left-0 top-24 flex-row hidden sm:flex '>
+            <ul className='items-center gap-x-6 text-[18px] left-0 top-24 flex-row hidden md:flex '>
                 <li href="/" className="hover:text-white cursor-pointer"> Home </li>
                 <li href="/about" className="hover:text-white cursor-pointer"> About </li>
                 <li href="/portofolio" className="hover:text-white cursor-pointer"> Portofolio </li>
@@ -31,7 +31,7 @@ function closeMenu() {
                 <i className='logo'>logo</i>
             </ul>
 
-            <div className='sm:hidden px-5'>
+            <div className='md:hidden px-5'>
                 {toggle ? (
                     <AiOutlineClose onClick={closeMenu} size={20} className='text-white'/>
                     

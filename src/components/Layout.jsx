@@ -4,19 +4,17 @@ import HomePage from "./HomePage"
 import NavbarComponent from "./NavbarComponent"
 import Portofolio from "./Portofolio"
 import Scroll from "./Scroll"
+import Sidebar from "./Sidebar"
 
 const Layout = () => {
   return (
     <>
     <NavbarComponent/>
+
     <HomePage/>
-    <Scroll/>
-    <hr />
     <About/>
-    <hr />
     <Portofolio/>
-    <hr />
-    <Contact/>
+    <Sidebar/>
     
     </>
 
