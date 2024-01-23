@@ -2,8 +2,8 @@ import Photo from '../assets/img/Photo.png';
 
 const About = () => {
   return (
-    <section className='bg-secondary flex justify-between w-full p-5'>
-      <div className='space-y-6 md:flex space-x-10'>
+    <section className='bg-secondary flex justify-between w-full'>
+      <div className='space-y-6 md:flex p-5'>
         <div className='hidden md:block'>
             <img src={Photo}  alt='MyPhoro' className=''/>
         </div>
