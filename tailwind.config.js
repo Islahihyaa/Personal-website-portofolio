@@ -10,11 +10,6 @@ export default {
       padding: '16px',
     },
     extend: {
-      fontFamily: {
-        sans: [
-          '"Mitr", sans-serif',
-        ],
-      },
       colors: {
         'primary': '#53CCEC',
         'secondary' : '#DEF4FA'
