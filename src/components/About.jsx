@@ -2,18 +2,22 @@ import Photo from '../assets/img/Photo.png';
 
 const About = () => {
   return (
-    <section className='bg-secondary flex justify-between w-full'>
-      <div className='space-y-6 md:flex p-5'>
-        <div className='hidden md:block'>
-            <img src={Photo}  alt='MyPhoro' className=''/>
+    <section className='bg-secondary py-10'>
+      <div className="container">
+        <div className='flex lg:px-4 lg:space-x-10'>
+          <div className='hidden lg:flex justify-center'>
+              <img src={Photo}  alt='MyPhoto'/>
+          </div>
+          <div className='w-1/2 lg:mr-10'>
+            <h1 className='font-bold text-primary mb-5 md:text-xl xl:text-3xl xl:mb-16 2xl:text-4xl'>ABOUT ME</h1>
+            <p className='mb-5 md:text-xl xl:text-3xl 2xl:text-4xl'>Hi There! I'm <span className='text-primary'>Islahihya 👋</span></p>
+            <p className='mb-5 md:text-xl xl:text-3xl text-slate-500'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ullam recusandae commodi nesciunt possimus hic enim magni esse quibusdam a nihil sequi reiciendis debitis labore provident, rem pariatur laudantium consequatur.</p>
+            <button className="bg-primary text-white p-3 font-bold rounded-lg shadow-lg lg:p-4 lg:text-2xl hover:bg-primary">Download CV</button>
+          </div>
         </div>
-        <div className='mb-3'>
-          <h1 className='font-bold mb-5 md:text-xl xl:text-3xl 2xl:text-4xl'>ABOUT ME</h1>
-          <p className='mb-3 md:text-xl xl:text-3xl 2xl:text-4xl'>Hi There! I'm <span className='text-[#53CCEC]'>Islahihya 👋</span></p>
-          <p className='mb-3 md:text-xl xl:text-3xl text-slate-500'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ullam recusandae commodi nesciunt possimus hic enim magni esse quibusdam a nihil sequi reiciendis debitis labore provident, rem pariatur laudantium consequatur.</p>
-          <button className="bg-[#53CCEC] text-white font-bold rounded-lg shadow-lg mb-3 p-3 hover:bg-[#39C0E4]">Download CV</button>
-        </div>
+
       </div>
+
     </section>
   )
 }
