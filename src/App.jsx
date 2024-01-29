@@ -4,17 +4,18 @@ import About from "./components/About"
 import Portofolio from "./components/Portofolio"
 import Sidebar from "./components/Sidebar"
 import Contact from "./components/Contact"
+import Skills from "./components/Skills"
 
 
 const App = () => {
   return (
     <>
     <NavbarComponent/>
-
     <HomePage/>
     <About/>
-    <Contact/>
+    <Skills/>
     <Portofolio/>
+    <Contact/>
     <Sidebar/>
     
     </>
