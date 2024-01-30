@@ -3,7 +3,7 @@ import PhotoProjects from '../assets/img/PhotoProjects1.png'
 
 const Portofolio = () => {
   return (
-    <section className='bg-secondary pt-10'>
+    <section name='portofolio' className='bg-secondary pt-10'>
       <div className='container p-10 flex flex-col justify-center h-full'>
         <div className=''>
             <h1 className='uppercase font-bold text-primary mb-5 md:text-xl xl:text-3xl xl:mb-10 2xl:text-4xl'>my portofolios</h1>

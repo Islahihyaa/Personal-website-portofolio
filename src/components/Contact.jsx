@@ -4,7 +4,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Contact = () => {
   return (
-    <section className="pt-40">
+    <section name='contact' className="pt-40">
       <div className="bg-secondary rounded-t-full">
         <div>
           <h1 className="uppercase text-center text-xl font-bold py-6 text-primary xl:text-3xl 2xl:text-4xl">contact</h1>

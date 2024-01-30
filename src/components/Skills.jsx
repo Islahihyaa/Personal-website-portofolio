@@ -3,7 +3,7 @@ import html from '../assets/img/html.png'
 
 const Skills = () => {
   return (
-    <section className='w-full h-screen'>
+    <section name='skills' className='w-full h-screen'>
         <div className="container p-10 flex flex-col justify-center h-full">
             <div className='mb-10'>
                 <h1 className='uppercase font-bold text-primary mb-5 md:text-xl xl:text-3xl xl:mb-10 2xl:text-4xl'>my skills</h1>

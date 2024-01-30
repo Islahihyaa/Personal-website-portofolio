@@ -1,18 +1,19 @@
 import { AiOutlineClose } from 'react-icons/ai';
 import {HiMenuAlt1} from 'react-icons/hi';
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 
 const NavbarComponent = () => {
 
-const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState(false);
 
-function openMenu(){
-    setToggle(true)
-}
+    function openMenu(){
+        setToggle(true)
+    }
 
-function closeMenu() {
-    setToggle(false)
-}
+    function closeMenu() {
+        setToggle(false)
+    }
 
   return (
     <>
@@ -23,12 +24,46 @@ function closeMenu() {
             </a>
 
             <ul className='items-center gap-x-6 text-[18px] left-0 top-24 flex-row hidden md:flex '>
-                <li href="/" className="hover:text-white cursor-pointer"> Home </li>
-                <li href="/about" className="hover:text-white cursor-pointer"> About </li>
-                <li href="/portofolio" className="hover:text-white cursor-pointer"> Portofolio </li>
-                <li href="/contact" className="hover:text-white cursor-pointer"> Contact </li>
-                <div className='opacity-50'>|</div>
-                <i className='logo'>logo</i>
+                <li href="/" className="hover:text-white cursor-pointer"> 
+                    <Link 
+                        to="home" 
+                        smooth={true} 
+                        duration={500}
+                        >Home
+                    </Link>
+                </li>
+                <li href="/about" className="hover:text-white cursor-pointer">
+                    <Link 
+                        to="about" 
+                        smooth={true} 
+                        duration={500}
+                        >About
+                    </Link>
+                </li>
+                <li href="/skills" className="hover:text-white cursor-pointer">
+                    <Link 
+                        to="skills" 
+                        smooth={true} 
+                        duration={500}
+                        >Skills
+                    </Link>
+                </li>
+                <li href="/portofolio" className="hover:text-white cursor-pointer">
+                    <Link 
+                        to="portofolio" 
+                        smooth={true} 
+                        duration={500}
+                        >Portofolio
+                    </Link>
+                </li>
+                <li href="/contact" className="hover:text-white cursor-pointer">
+                    <Link 
+                        to="contact" 
+                        smooth={true} 
+                        duration={500}
+                        >Contact
+                    </Link>
+                </li>
             </ul>
 
             <div className='md:hidden px-5'>
@@ -41,22 +76,16 @@ function closeMenu() {
 
             {toggle ? (
                 <ul className='text-white font-semibold justify-between w-full flex-col flex items-center'>
-                    <li className='cursor-pointer mb-5'><a href="/">HOME</a></li>
-                    <li className='cursor-pointer mb-5'><a href="/about">ABOUT</a></li>
-                    <li className='cursor-pointer mb-5'><a href="/portofolio">PORTOFOLIO</a></li>
-                    <li className='cursor-pointer mb-5'><a href="/contact">CONTACT</a></li>
+                    <li href="/" className='cursor-pointer mb-5'>HOME</li>
+                    <li href="/about" className='cursor-pointer mb-5'>ABOUT</li>
+                    <li href="/skills" className='cursor-pointer mb-5'>SKILL</li>
+                    <li href="/portofolio" className='cursor-pointer mb-5'>PORTOFOLIO</li>
+                    <li href="/contact" className='cursor-pointer mb-5'>CONTACT</li>
                 </ul>
             ):(
                 <div></div>
             )}
-        
-
-
-
         </nav>
-
-
-
    </> 
   )
 }
