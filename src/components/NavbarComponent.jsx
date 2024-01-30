@@ -17,7 +17,7 @@ function closeMenu() {
   return (
     <>
     <nav className='bg-primary fixed w-full mb-10'>
-        <div className='py-5 px-4 flex items-center justify-between'>
+        <div className='py-5 px-4 flex items-center justify-between lg:px-20'>
             <a className="text-xl text-white font-bold lg:px-5" href="#">
                 Islahihya Muhammad
             </a>
